@@ -2,3 +2,27 @@
 @media(max-width:960px){.nav nav{display:none}.nav nav.open{display:flex;position:absolute;top:68px;left:4%;right:4%;padding:16px 18px;flex-direction:column;gap:14px;background:#fff;border:1px solid #e5edf1;border-radius:0 0 10px 10px;box-shadow:0 15px 28px rgba(20,55,75,.12)}.menu-btn{display:block}.nav-actions .whatsapp{display:none}.hero-note{display:none}.hotel-grid,.services-grid{grid-template-columns:repeat(2,1fr)}.picker,.flight-form{grid-template-columns:1fr 1fr}.picker .btn,.flight-form .btn{width:100%}.flight-form .btn{grid-column:span 2}.experience-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.experience-copy{padding:55px 0}.experience-image{min-height:280px}.contact-grid{gap:35px}.section-head{align-items:start;display:block}.section-head p{margin-top:12px}.about-image{margin-top:5px}.booking-heading{display:block}.secure{padding-top:13px}.progress{overflow:auto}}
 @media(max-width:620px){.announcement-inner{font-size:9px}.site-header{height:68px}.nav{gap:14px}.brand img{width:39px;height:39px}.brand b{font-size:13px}.brand small{font-size:8px}.nav-actions{margin-left:auto}.hotel-grid,.services-grid,.picker,.flight-form{grid-template-columns:1fr}.flight-form .btn{grid-column:auto}.hero,.hero-content{min-height:590px}.hero-copy{padding:45px 0}.hero h1{font-size:43px}.hero p{font-size:14px}.hero-actions{align-items:start;flex-direction:column;gap:17px}.trust-row{display:grid;gap:7px}.booking-wrap{margin-top:-35px}.booking-card{padding:22px 18px}.booking-heading h2{font-size:27px}.progress span:not(:last-child):after{width:16px}.progress i{white-space:nowrap}.section{padding:66px 0}.section-head h2,.about h2{font-size:29px}.experience h2,.contact-section h2{font-size:31px}.about-grid{gap:35px}.about-image img{height:280px}.stamp{left:10px;bottom:13px}.rtl .stamp{left:auto;right:10px}.stats{gap:21px}.stats b{font-size:23px}.two{grid-template-columns:1fr}.footer{flex-direction:column;justify-content:center;padding:22px;text-align:center}.modal-box{padding:24px 18px}#toast{left:18px;right:18px;bottom:16px;text-align:center}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+
+/* Final visual polish */
+:root{--ocean:#0a6f86;--coral:#e8754f;--sun:#f0b45b;--ink:#17354b;--mist:#f6fbfc}
+body{background:var(--mist);color:var(--ink)}
+.announcement{background:linear-gradient(100deg,#103955,#0a6f86)}
+.announcement a{color:#ffd07b}
+.brand small,.eyebrow.dark,.hotel-body small{color:#d27d34}
+.nav nav a:hover{color:var(--coral)}
+.hero-bg{background:linear-gradient(90deg,rgba(5,32,51,.94),rgba(5,69,85,.72),rgba(10,92,102,.2)),url('/assets/kamour-flight.jpg') center/cover}
+.hero-bg:after{background:radial-gradient(circle at 78% 20%,rgba(232,117,79,.35),transparent 29%)}
+.rtl .hero-bg{background:linear-gradient(270deg,rgba(5,32,51,.94),rgba(5,69,85,.72),rgba(10,92,102,.2)),url('/assets/kamour-flight.jpg') center/cover}
+.btn.gold{background:linear-gradient(135deg,#f0b45b,#e8754f);color:#fff}.btn.gold:hover{background:linear-gradient(135deg,#f7c775,#ef8968)}
+.btn.navy{background:linear-gradient(135deg,#0a6f86,#0b4f7d)}.btn.navy:hover{background:#09566a}
+.booking-card{border-top:4px solid var(--coral)}
+.progress .active b{background:var(--coral)}.progress .active{color:#c95f3d}
+.hotel-card{border-top:3px solid #f0b45b}.hotel-card:hover{border-top-color:var(--coral)}
+.hotel-tag{color:#0a6f86}.hotel-body button{color:#0a6f86}
+.experience{background:linear-gradient(120deg,#0b3c59,#0a6f86)}
+.about{background:linear-gradient(135deg,#eef9f7,#fff8ee)}
+.about-image img{object-position:center}.stamp{border-left:4px solid var(--coral)}
+.services-grid article>span{background:#fff1e8;color:#d0643e}.airlines span{border-color:#bde0e5;color:#0a6f86}
+.optional-hint{color:#c0633d}.footer>a{color:#0d9860}
+.hero-note{border-color:rgba(255,255,255,.35)}
+@media(max-width:620px){.hero-bg{background-position:62% center}.rtl .hero-bg{background-position:38% center}}
