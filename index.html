@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#073b75">
+  <meta name="description" content="Kamour Voyages — Billets d'avion, hôtels, visas et accompagnement voyage depuis Nouakchott.">
+  <title>Kamour Voyages — Votre Passeport vers l’Aventure</title>
+  <link rel="icon" href="/assets/kamour-logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <img src="/assets/kamour-logo.jpg" alt="Kamour Voyages">
+      <span><b>KAMOUR</b><small>Voyages</small></span>
+    </a>
+    <button class="menu-btn" aria-label="Menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home" data-fr="Accueil" data-ar="الرئيسية">Accueil</a>
+      <a href="#hotels" data-fr="Hôtels" data-ar="الفنادق">Hôtels</a>
+      <a href="#flights" data-fr="Vols" data-ar="الرحلات">Vols</a>
+      <a href="#services" data-fr="Services" data-ar="الخدمات">Services</a>
+      <a href="#about" data-fr="À propos" data-ar="من نحن">À propos</a>
+      <a href="#contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="langBtn" class="lang">عربي</button>
+      <a class="whatsapp" href="https://wa.me/22247533852" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <span class="eyebrow" data-fr="AGENCE DE VOYAGES • NOUAKCHOTT" data-ar="وكالة سفر • نواكشوط">AGENCE DE VOYAGES • NOUAKCHOTT</span>
+      <h1 data-fr="Votre passeport vers l’aventure." data-ar="جواز سفرك نحو المغامرة.">Votre passeport vers l’aventure.</h1>
+      <p data-fr="Billets d’avion, hôtels, visas et accompagnement personnalisé. Nous organisons votre voyage de A à Z." data-ar="تذاكر الطيران والفنادق والتأشيرات ومرافقة شخصية. ننظم رحلتك من الألف إلى الياء.">Billets d’avion, hôtels, visas et accompagnement personnalisé. Nous organisons votre voyage de A à Z.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#hotels" data-fr="Réserver un hôtel" data-ar="احجز فندقًا">Réserver un hôtel</a>
+        <a class="btn ghost" href="#flights" data-fr="Demander un billet" data-ar="طلب تذكرة">Demander un billet</a>
+      </div>
+      <div class="trust">
+        <span>✈️ <b>20+</b> ans d’expérience</span>
+        <span>🌍 Destinations internationales</span>
+        <span>💬 Assistance WhatsApp</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="search-panel-wrap">
+  <div class="container">
+    <div class="search-panel">
+      <div class="tabs">
+        <button class="tab active" data-tab="hotel">🏨 <span data-fr="Hôtels" data-ar="الفنادق">Hôtels</span></button>
+        <button class="tab" data-tab="flight">✈️ <span data-fr="Vols" data-ar="الرحلات">Vols</span></button>
+        <button class="tab" data-tab="visa">🛂 <span data-fr="Visa" data-ar="التأشيرة">Visa</span></button>
+      </div>
+      <form id="hotelSearch" class="search-form">
+        <label><span data-fr="Destination" data-ar="الوجهة">Destination</span><input id="destination" value="Paris" placeholder="Paris, Dubai, Istanbul..."></label>
+        <label><span data-fr="Arrivée" data-ar="تاريخ الدخول">Arrivée</span><input id="checkIn" type="date"></label>
+        <label><span data-fr="Départ" data-ar="تاريخ الخروج">Départ</span><input id="checkOut" type="date"></label>
+        <label><span data-fr="Voyageurs" data-ar="المسافرون">Voyageurs</span><select id="guests"><option value="1">1 personne</option><option value="2" selected>2 personnes</option><option value="3">3 personnes</option><option value="4">4 personnes</option><option value="5">5 personnes</option><option value="6">6 personnes</option></select></label>
+        <button class="btn primary" type="submit" data-fr="Rechercher" data-ar="بحث">Rechercher</button>
+      </form>
+      <div id="flightForm" class="search-form hidden">
+        <label>De<input id="from" placeholder="Nouakchott (NKC)"></label>
+        <label>À<input id="to" placeholder="Paris, Dubai..."></label>
+        <label>Date<input type="date" id="flightDate"></label>
+        <label>Passagers<select><option>1</option><option selected>2</option><option>3</option><option>4</option></select></label>
+        <a class="btn primary" href="https://wa.me/22247533852?text=Bonjour%20Kamour%20Voyages%2C%20je%20souhaite%20demander%20un%20billet%20d'avion." target="_blank">Demander</a>
+      </div>
+      <div id="visaForm" class="search-form hidden">
+        <label>Pays<input id="visaCountry" placeholder="France, Turquie, Émirats..."></label>
+        <label>Type<select><option>Tourisme</option><option>Affaires</option><option>Transit</option></select></label>
+        <label>Départ<input type="date"></label>
+        <a class="btn primary" href="https://wa.me/22247533852?text=Bonjour%20Kamour%20Voyages%2C%20je%20souhaite%20une%20assistance%20visa." target="_blank">Commencer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hotels" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">HOTELS</span><h2 data-fr="Réservez votre hôtel en toute simplicité" data-ar="احجز فندقك بسهولة">Réservez votre hôtel en toute simplicité</h2></div>
+      <p data-fr="Comparez des offres et envoyez une demande de réservation à Kamour Voyages. Les disponibilités réelles peuvent être connectées à notre fournisseur hôtelier." data-ar="قارن العروض وأرسل طلب الحجز إلى كامور للسفريات. يمكن ربط المنصة بالتوفر والأسعار الحقيقية عبر مزود الفنادق.">Comparez des offres et envoyez une demande de réservation à Kamour Voyages.</p>
+    </div>
+    <div id="hotelStatus" class="status"></div>
+    <div id="hotelGrid" class="hotel-grid"></div>
+  </div>
+</section>
+
+<section class="banner-section">
+  <div class="container banner-card">
+    <img src="/assets/kamour-banner.jpg" alt="Kamour Voyages">
+    <div>
+      <span class="eyebrow">KAMOUR VOYAGES</span>
+      <h2 data-fr="Un voyage bien préparé commence par un bon accompagnement." data-ar="الرحلة الناجحة تبدأ بتنظيم ومرافقة جيدة.">Un voyage bien préparé commence par un bon accompagnement.</h2>
+      <p data-fr="Notre équipe vous accompagne pour les billets, hôtels, visas et conseils de voyage." data-ar="فريقنا يرافقكم في التذاكر والفنادق والتأشيرات والاستشارات الخاصة بالسفر.">Notre équipe vous accompagne pour les billets, hôtels, visas et conseils de voyage.</p>
+      <a class="btn primary" href="#contact">Nous contacter</a>
+    </div>
+  </div>
+</section>
+
+<section id="flights" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div><span class="eyebrow">FLIGHTS</span><h2 data-fr="Billets d’avion aux meilleurs tarifs" data-ar="تذاكر الطيران بأفضل الأسعار">Billets d’avion aux meilleurs tarifs</h2></div>
+      <p data-fr="Mauritania Airlines, Qatar Airways, Emirates, Turkish Airlines, Royal Air Maroc, Tunisair, Saudia et autres compagnies selon disponibilité." data-ar="موريتانيا للطيران وقطرية والإماراتية والتركية والمغربية وتونسير والسعودية وغيرها حسب التوفر.">Mauritania Airlines, Qatar Airways, Emirates, Turkish Airlines, Royal Air Maroc, Tunisair, Saudia et autres compagnies.</p>
+    </div>
+    <div class="airline-strip">
+      <span>MAURITANIA AIRLINES</span><span>QATAR AIRWAYS</span><span>EMIRATES</span><span>TURKISH AIRLINES</span><span>ROYAL AIR MAROC</span><span>TUNISAIR</span><span>SAUDIA</span>
+    </div>
+    <div class="cta-grid">
+      <div class="cta-card"><div class="icon">✈️</div><h3 data-fr="Demande personnalisée" data-ar="طلب مخصص">Demande personnalisée</h3><p data-fr="Indiquez votre destination, dates et nombre de voyageurs." data-ar="أرسل وجهتك وتاريخ السفر وعدد المسافرين.">Indiquez votre destination, dates et nombre de voyageurs.</p><a class="btn primary" href="https://wa.me/22247533852" target="_blank">WhatsApp</a></div>
+      <div class="cta-card"><div class="icon">🎫</div><h3 data-fr="Émission rapide" data-ar="إصدار سريع">Émission rapide</h3><p data-fr="Une équipe disponible pour suivre votre réservation jusqu’au départ." data-ar="فريق متاح لمتابعة حجزك حتى موعد السفر.">Une équipe disponible pour suivre votre réservation jusqu’au départ.</p><a class="btn dark" href="#contact">Contact</a></div>
+      <div class="cta-card"><div class="icon">🧳</div><h3 data-fr="Conseils voyage" data-ar="نصائح السفر">Conseils voyage</h3><p data-fr="Informations pratiques et accompagnement selon votre destination." data-ar="معلومات عملية ومرافقة حسب وجهتك.">Informations pratiques et accompagnement selon votre destination.</p><a class="btn dark" href="#services">Nos services</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-head centered"><span class="eyebrow">SERVICES</span><h2 data-fr="Tout ce qu’il vous faut pour voyager" data-ar="كل ما تحتاجه للسفر">Tout ce qu’il vous faut pour voyager</h2></div>
+    <div class="services-grid">
+      <article><span>✈️</span><h3 data-fr="Billets d’avion" data-ar="تذاكر الطيران">Billets d’avion</h3><p data-fr="Réservation de vols internationaux avec accompagnement." data-ar="حجز الرحلات الدولية مع المرافقة.">Réservation de vols internationaux avec accompagnement.</p></article>
+      <article><span>🏨</span><h3 data-fr="Réservation d’hôtels" data-ar="حجز الفنادق">Réservation d’hôtels</h3><p data-fr="Recherche d’hôtels et demande de réservation pour votre séjour." data-ar="البحث عن الفنادق وإرسال طلب الحجز لإقامتك.">Recherche d’hôtels et demande de réservation pour votre séjour.</p></article>
+      <article><span>🛂</span><h3 data-fr="Assistance visa" data-ar="مساعدة التأشيرات">Assistance visa</h3><p data-fr="Orientation et préparation de votre dossier selon la destination." data-ar="توجيه ومساعدة في تجهيز ملف التأشيرة حسب الوجهة.">Orientation et préparation de votre dossier selon la destination.</p></article>
+      <article><span>💬</span><h3 data-fr="Suivi WhatsApp" data-ar="متابعة عبر واتساب">Suivi WhatsApp</h3><p data-fr="Un contact direct et rapide avec notre équipe." data-ar="تواصل مباشر وسريع مع فريقنا.">Un contact direct et rapide avec notre équipe.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section dark-section">
+  <div class="container about-grid">
+    <div><span class="eyebrow">KAMOUR VOYAGES</span><h2 data-fr="Une agence proche de ses voyageurs." data-ar="وكالة قريبة من مسافريها.">Une agence proche de ses voyageurs.</h2><p data-fr="Basée à Nouakchott, Kamour Voyages propose des services de voyage avec une approche simple : de bons tarifs, un suivi réactif et un accompagnement jusqu’à la réalisation du voyage." data-ar="من نواكشوط، تقدم كامور للسفريات خدمات السفر بطريقة بسيطة: أسعار مناسبة ومتابعة سريعة ومرافقة حتى إتمام الرحلة.">Basée à Nouakchott, Kamour Voyages propose des services de voyage avec une approche simple : de bons tarifs, un suivi réactif et un accompagnement jusqu’à la réalisation du voyage.</p></div>
+    <img src="/assets/kamour-promo.jpg" alt="Kamour Voyages">
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact-grid">
+    <div><span class="eyebrow">CONTACT</span><h2 data-fr="Parlons de votre prochain voyage." data-ar="لنتحدث عن رحلتك القادمة.">Parlons de votre prochain voyage.</h2><p data-fr="Notre équipe est disponible à Nouakchott et sur WhatsApp." data-ar="فريقنا متاح في نواكشوط وعبر واتساب.">Notre équipe est disponible à Nouakchott et sur WhatsApp.</p>
+      <div class="contact-list"><div>📍 <b>Nouakchott, Mauritanie</b></div><div>📱 <b>+222 47 53 38 52</b></div><div>✉️ <b>kamourvoyages@hotmail.fr</b></div></div>
+    </div>
+    <form id="contactForm" class="contact-form">
+      <input id="cName" required placeholder="Nom complet">
+      <input id="cPhone" required placeholder="Téléphone / WhatsApp">
+      <select id="cSubject"><option>Hôtel</option><option>Billet d’avion</option><option>Visa</option><option>Autre</option></select>
+      <textarea id="cMessage" required rows="5" placeholder="Votre demande"></textarea>
+      <button class="btn primary" type="submit">Envoyer via WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer"><div><b>KAMOUR Voyages</b><small>Votre Passeport vers l’Aventure</small></div><div>© <span id="year"></span> Kamour Voyages. Tous droits réservés.</div><a href="https://wa.me/22247533852" target="_blank">WhatsApp</a></div></footer>
+
+<div id="bookingModal" class="modal" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-close" id="closeModal">×</button>
+    <span class="eyebrow">RÉSERVATION HÔTEL</span>
+    <h2 id="modalHotel">Hôtel</h2>
+    <p id="modalOffer"></p>
+    <form id="bookingForm">
+      <input type="hidden" id="selectedHotel">
+      <input type="hidden" id="selectedOffer">
+      <div class="two"><input id="bFirst" required placeholder="Prénom"><input id="bLast" required placeholder="Nom"></div>
+      <input id="bPhone" required placeholder="Téléphone / WhatsApp">
+      <input id="bEmail" type="email" placeholder="Email">
+      <div class="two"><input id="bCheckIn" type="date" required><input id="bCheckOut" type="date" required></div>
+      <select id="bGuests"><option value="1">1 voyageur</option><option value="2" selected>2 voyageurs</option><option value="3">3 voyageurs</option><option value="4">4 voyageurs</option></select>
+      <textarea id="bNotes" rows="3" placeholder="Demandes particulières (facultatif)"></textarea>
+      <button class="btn primary full" type="submit">Envoyer la demande de réservation</button>
+      <small class="modal-note">La réservation est confirmée par Kamour Voyages après vérification de la disponibilité et du tarif final.</small>
+    </form>
+  </div>
+</div>
+
+<div id="toast"></div>
+<script src="/app.js"></script>
+</body>
+</html>
