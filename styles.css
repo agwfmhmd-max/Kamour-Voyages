@@ -26,3 +26,5 @@ body{background:var(--mist);color:var(--ink)}
 .optional-hint{color:#c0633d}.footer>a{color:#0d9860}
 .hero-note{border-color:rgba(255,255,255,.35)}
 @media(max-width:620px){.hero-bg{background-position:62% center}.rtl .hero-bg{background-position:38% center}}
+
+.experience-image img,.about-image img{display:block}.hero-bg{background-image:linear-gradient(90deg,rgba(3,26,47,.96) 0%,rgba(5,43,71,.78) 45%,rgba(7,54,80,.28) 100%),url('/assets/kamour-flight.jpg')}.rtl .hero-bg{background-image:linear-gradient(270deg,rgba(3,26,47,.96) 0%,rgba(5,43,71,.78) 45%,rgba(7,54,80,.28) 100%),url('/assets/kamour-flight.jpg')}
